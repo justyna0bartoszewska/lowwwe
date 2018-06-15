@@ -71,31 +71,31 @@
 		<!-- Zawartość zakładek -->
 		<div class="tab-content">
 		  <div class="tab-pane active" id="1zakladka">
-			<form class="needs-validation" role="form" id="brief-lp" data-toggle="validator" class="shake" novalidate>
+			<form class="needs-validation"  method="POST" role="form" id="brief-lp" data-toggle="validator" class="shake" novalidate>
 			  <div class="form-group">
 				<label for="inputName" class="control-label">Pełne dane kontaktowe zamawiającego *</label>
-				<input type="text" class="form-control" id="inputName" placeholder="Imię i Nazwisko/Nazwa i adres firmy" required>
+				<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Imię i Nazwisko/Nazwa i adres firmy" required>
 				<div class="help-block with-errors"></div>
 			  </div>
 			  <div class="form-group">
 				<label for="inputEmail" class="control-label">Adres email zamawiającego *</label>
-				<input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+				<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="name@example.com" required>
 				<div class="help-block with-errors"></div>
 			  </div>
 			  <div class="form-group">
 				<label for="inputDomena" class="control-label">Nazwa domeny</label>
-				<input type="text" class="form-control" id="inputDomena" placeholder="www.twojanazwa.pl">
+				<input type="text" class="form-control" id="inputDomena" name="inputDomena" placeholder="www.twojanazwa.pl">
 				<div class="help-block with-errors"></div>
 			  </div>
 			   <div class="form-group">
 				<label for="inputTematyka" class="control-label">Tematyka strony/branża</label>
-				<input type="text" class="form-control" id="inputTematyka" placeholder="Np. Gabinet kosmetyczny">
+				<input type="text" class="form-control" id="inputTematyka" name="inputTematyka" placeholder="Np. Gabinet kosmetyczny">
 				<div class="help-block with-errors"></div>
 			   </div>
 			   
 			  <div class="form-group">
 				<label for="rodzajStrony">Rodzaj strony*</label>
-				<select class="form-control" id="rodzajStrony">
+				<select class="form-control" id="rodzajStrony" name="rodzajStrony">
 				  <option>one page (wszystko na jednej stronie)</option>
 				  <option>strona wielozakładowa</option>
 				  <option>konfiguracja dowolna</option>
@@ -104,7 +104,7 @@
 			  </div>
 			  <div class="form-group">
 				<label for="skladProjektu">Skład projektu(aby zaznaczyć kilka naciśnij Shift)</label>
-				<select multiple class="form-control" id="skladProjektu">
+				<select multiple class="form-control" id="skladProjektu"  name="skladProjektu">
 				  <option> podstawowy formularz kontaktowy</option>
 				  <option>rozbudowany formularz kontaktowy</option>
 				  <option>rozbudowany formularz kontaktowy z możliwością wgrania pliku</option>
@@ -120,17 +120,17 @@
 			  </div>
 			  <div class="form-group">
 				<label for="TytulyZakladek">Tytuły zakładek</label>
-				<textarea class="form-control" id="TytulyZakladek" rows="3"></textarea>
+				<textarea class="form-control" id="TytulyZakladek" name="TytulyZakladek" rows="3"></textarea>
 				<div class="help-block with-errors"></div>
 			  </div>
 			  <div class="form-group">
 				<label for="adresurl" class="control-label">Link do materiałów</label>
-				<input type="text" class="form-control" id="adresurl" placeholder="http:/0yygby.com">
+				<input type="text" class="form-control" id="adresurl" name="adresurl" placeholder="http:/0yygby.com">
 				<div class="help-block with-errors"></div>
 			  </div>
 			   <div class="form-group">
 				<label for="teksty">Przygotowanie tekstów na strone*</label>
-				<select class="form-control" id="teksty">
+				<select class="form-control" id="teksty" name="teksty">
 				  <option>po stronie agencji</option>
 				  <option>po stronie klienta</option>
 				</select>
@@ -138,7 +138,7 @@
 			   </div>
 			   <div class="form-group">
 				<label for="szablon">Szablon landing page *</label>
-				<select class="form-control" id="szablon">
+				<select class="form-control" id="szablon" name="szablon">
 				  <option>projekt indywidualny</option>
 				  <option>projekt standardowy</option>
 				</select>
@@ -146,7 +146,7 @@
 			   </div>
 			    <div class="form-group">
 				<label for="srodowisko">Serwer i środowisko *</label>
-				<select class="form-control" id="srodowisko">
+				<select class="form-control" id="srodowisko" name="srodowisko">
 				  <option>po stronie agencji</option>
 				  <option>po stronie klienta</option>
 				</select>
@@ -154,7 +154,7 @@
 			   </div>
 			    <div class="form-group">
 				<label for="system">System budowania strony *</label>
-				<select class="form-control" id="system">
+				<select class="form-control" id="system" name="system">
 				  <option>CMS (klient sam może zarządzać treścią, ale strona gorzej się pozycjonuje w sieci)</option>
 				  <option>czysty serwis bez aplikacji, wszelkie zmiany wprowadza agencja (strona działa szybciej i lepiej się pozycjonuje)</option>
 				</select>
@@ -162,26 +162,26 @@
 				</div>
 				<div class="form-group">
 				<label for="Inspiracje">Inspiracje</label>
-				<textarea class="form-control" id="Inspiracje" rows="1"></textarea>
+				<textarea class="form-control" id="Inspiracje" name="Inspiracje" rows="1"></textarea>
 				<div class="help-block with-errors"></div>
 				</div>
 				<div class="form-group">
 				<label for="Budzet">Budżet</label>
-				<textarea class="form-control" id="Budzet" rows="1"></textarea>
+				<textarea class="form-control" id="Budzet" name="Budzet" rows="1"></textarea>
 				<div class="help-block with-errors"></div>
 				</div>
 			    <div class="form-group">
 				<label for="DodatkowyOpis">Dodatkowy opis</label>
-				<textarea class="form-control" id="DodatkowyOpis" rows="4"></textarea>
+				<textarea class="form-control" id="DodatkowyOpis" name="DodatkowyOpis" rows="4"></textarea>
 				<div class="help-block with-errors"></div>
 				</div>
 				<div class="form-group">
 					<label for="zalacznik">Załączniki</label>
-					<input type="file" class="form-control-file" id="zalacznik">
+					<input type="file" class="form-control-file" id="zalacznik" name="zalacznik">
 					<div class="help-block with-errors"></div>
 				</div>
 				<div class="form-check">
-				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1" required>
 				  <label class="form-check-label" for="zgoda">
 					*Wyrażam zgodę na przetwarzanie przez www.lowwwe.pl moich danych osobowych podanych w formularzu w celu udzielenia odpowiedzi na zadane pytanie, zgodnie z przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. i przepisami krajowymi dotyczącymi ochrony danych osobowych, w tym przesyłania ich drogą elektroniczną.
 				  </label>
