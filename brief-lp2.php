@@ -15,7 +15,7 @@ $system = $_POST["system"];
 $Inspiracje = $_POST["Inspiracje"];
 $Budzet = $_POST["Budzet"];
 $DodatkowyOpis = $_POST["DodatkowyOpis"];
-$zalacznik = $_POST["zalacznik"];
+
 
 $EmailTo = "biuro@lowwwe.pl";
 $Subject = "Landing Page";
@@ -81,10 +81,6 @@ $Body .= "\n";
 
 $Body .= "Dodatkowy Opis: ";
 $Body .= $DodatkowyOpis;
-$Body .= "\n";
-
-$Body .= "Załącznik: ";
-$Body .= $zalacznik;
 $Body .= "\n";
 
 $Body .= "Wyrażam zgodę na przetwarzanie przez www.lowwwe.pl moich danych osobowych podanych w formularzu w celu udzielenia odpowiedzi na zadane pytanie, zgodnie z przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. i przepisami krajowymi dotyczącymi ochrony danych osobowych, w tym przesyłania ich drogą elektroniczną. ";
