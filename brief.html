@@ -63,7 +63,7 @@
 			<!-- Zakładki -->
 		<ul class="nav nav-tabs" role="tablist">
 		  <li class="active"><a href="#1zakladka" role="tab" data-toggle="tab">Landing Page</a></li>
-		  <li><a href="#2zakladka" role="tab" data-toggle="tab">2 zakładka</a></li>
+		  <li><a href="#2zakladka" role="tab" data-toggle="tab">Serwis www</a></li>
 		  <li><a href="#3zakladka" role="tab" data-toggle="tab">3 zakładka</a></li>
 		  <li><a href="#4zakladka" role="tab" data-toggle="tab">4 zakładka</a></li>
 		</ul>
@@ -175,11 +175,7 @@
 				<textarea class="form-control" id="DodatkowyOpis" name="DodatkowyOpis" rows="4"></textarea>
 				<div class="help-block with-errors"></div>
 				</div>
-				<div class="form-group">
-					<label for="zalacznik">Załączniki</label>
-					<input type="file" class="form-control-file" id="zalacznik" name="zalacznik">
-					<div class="help-block with-errors"></div>
-				</div>
+				
 				<div class="form-check">
 				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1" required>
 				  <label class="form-check-label" for="zgoda">
@@ -194,7 +190,132 @@
 				<div class="clearfix"></div>
 			</form>
 		  </div>
-		  <div class="tab-pane" id="2zakladka">Zawartość drugiej zakładki</div>
+		  <div class="tab-pane" id="2zakladka">
+		  	<form class="needs-validation"  method="POST" role="form" id="brief-www" data-toggle="validator" class="shake" novalidate>
+			  <div class="form-group">
+				<label for="inputName" class="control-label">Pełne dane kontaktowe zamawiającego *</label>
+				<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Imię i Nazwisko/Nazwa i adres firmy" required>
+				<div class="help-block with-errors"></div>
+			  </div>
+			  <div class="form-group">
+				<label for="inputEmail" class="control-label">Adres email zamawiającego *</label>
+				<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="name@example.com" required>
+				<div class="help-block with-errors"></div>
+			  </div>
+			  <div class="form-group">
+				<label for="inputDomena" class="control-label">Nazwa domeny</label>
+				<input type="text" class="form-control" id="inputDomena" name="inputDomena" placeholder="www.twojanazwa.pl">
+				<div class="help-block with-errors"></div>
+			  </div>
+			   <div class="form-group">
+				<label for="inputTematyka" class="control-label">Tematyka strony/branża</label>
+				<input type="text" class="form-control" id="inputTematyka" name="inputTematyka" placeholder="Np. Gabinet kosmetyczny">
+				<div class="help-block with-errors"></div>
+			   </div>
+			   
+			  <div class="form-group">
+				<label for="rodzajStrony">Rodzaj strony*</label>
+				<select class="form-control" id="rodzajStrony" name="rodzajStrony">
+				  <option>one page (wszystko na jednej stronie)</option>
+				  <option>strona wielozakładowa</option>
+				  <option>konfiguracja dowolna</option>
+				</select>
+				<div class="help-block with-errors"></div>
+			  </div>
+			  <div class="form-group">
+				<label for="skladProjektu">Skład projektu(aby zaznaczyć kilka naciśnij Shift)</label>
+				<select multiple class="form-control" id="skladProjektu"  name="skladProjektu">
+				  <option>podstawowy formularz kontaktowy</option>
+				  <option>rozbudowany formularz kontaktowy</option>
+				  <option>rozbudowany formularz kontaktowy z możliwością wgrania pliku</option>
+				  <option>rozbudowany formularz kontaktowy z walidacją</option>
+				  <option>polityka cookies</option>
+				  <option>wykonanie projektu logo</option>
+				  <option>mapa dojazdu</option>
+				  <option>strona produktowa</option>
+				  <option>galeria</option>
+				  <option>ogłoszenia</option>
+				  <option>blog</option>
+				  <option>FAQ</option>
+				  <option>czat</option>
+				  <option>newsletter</option>
+				  <option>wersje językowe</option>
+				  <option>prowadzenie strony i aktualizacja</option>
+				</select>
+				<div class="help-block with-errors"></div>
+			  </div>
+			  <div class="form-group">
+				<label for="TytulyZakladek">Tytuły zakładek</label>
+				<textarea class="form-control" id="TytulyZakladek" name="TytulyZakladek" rows="3"></textarea>
+				<div class="help-block with-errors"></div>
+			  </div>
+			  <div class="form-group">
+				<label for="adresurl" class="control-label">Link do materiałów</label>
+				<input type="text" class="form-control" id="adresurl" name="adresurl" placeholder="http:/0yygby.com">
+				<div class="help-block with-errors"></div>
+			  </div>
+			   <div class="form-group">
+				<label for="teksty">Przygotowanie tekstów na strone*</label>
+				<select class="form-control" id="teksty" name="teksty">
+				  <option>po stronie agencji</option>
+				  <option>po stronie klienta</option>
+				</select>
+				<div class="help-block with-errors"></div>
+			   </div>
+			   <div class="form-group">
+				<label for="szablon">Szablon landing page *</label>
+				<select class="form-control" id="szablon" name="szablon">
+				  <option>projekt indywidualny</option>
+				  <option>projekt standardowy</option>
+				</select>
+				<div class="help-block with-errors"></div>
+			   </div>
+			    <div class="form-group">
+				<label for="srodowisko">Serwer i środowisko *</label>
+				<select class="form-control" id="srodowisko" name="srodowisko">
+				  <option>po stronie agencji</option>
+				  <option>po stronie klienta</option>
+				</select>
+				<div class="help-block with-errors"></div>
+			   </div>
+			    <div class="form-group">
+				<label for="system">System budowania strony *</label>
+				<select class="form-control" id="system" name="system">
+				  <option>CMS (klient sam może zarządzać treścią, ale strona gorzej się pozycjonuje w sieci)</option>
+				  <option>czysty serwis bez aplikacji, wszelkie zmiany wprowadza agencja (strona działa szybciej i lepiej się pozycjonuje)</option>
+				</select>
+				<div class="help-block with-errors"></div>
+				</div>
+				<div class="form-group">
+				<label for="Inspiracje">Inspiracje</label>
+				<textarea class="form-control" id="Inspiracje" name="Inspiracje" rows="1"></textarea>
+				<div class="help-block with-errors"></div>
+				</div>
+				<div class="form-group">
+				<label for="Budzet">Budżet</label>
+				<textarea class="form-control" id="Budzet" name="Budzet" rows="1"></textarea>
+				<div class="help-block with-errors"></div>
+				</div>
+			    <div class="form-group">
+				<label for="DodatkowyOpis">Dodatkowy opis</label>
+				<textarea class="form-control" id="DodatkowyOpis" name="DodatkowyOpis" rows="4"></textarea>
+				<div class="help-block with-errors"></div>
+				</div>
+				
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1" required>
+				  <label class="form-check-label" for="zgoda">
+					*Wyrażam zgodę na przetwarzanie przez www.lowwwe.pl moich danych osobowych podanych w formularzu w celu udzielenia odpowiedzi na zadane pytanie, zgodnie z przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. i przepisami krajowymi dotyczącymi ochrony danych osobowych, w tym przesyłania ich drogą elektroniczną.
+				  </label>
+				  <div class="help-block with-errors"></div>
+				</div>
+				<div class="col-auto">
+				  <button type="submit" class="btn btn-primary mb-2">Wyślij Brief</button>
+				</div>
+				<div id="msgSubmit" class="h3 text-center hidden"></div>
+				<div class="clearfix"></div>
+			</form>
+		  </div>
 		  <div class="tab-pane" id="3zakladka">Zawartość trzeciej zakładki</div>
 		  <div class="tab-pane" id="4zakladka">Zawartość czwartej zakładki</div>
 		</div>
@@ -268,6 +389,7 @@ $(document).ready(function(){
 <script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="js/validator.min.js"></script>
  <script src="brief-lp.js"></script>
+ <script src="brief-www.js"></script>
 <!-- Animacja usług -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/anim/vanilla-tilt.js"></script>
