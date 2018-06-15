@@ -34,7 +34,7 @@ function submitForm(){
 	$.ajax({
       type: "POST",
       url: "brief-lp2.php",
-      data: "name=" + name + "&email=" + email + "&message=" + message,
+      data: $('form#brief-lp').serialize(),
       success : function(text){
           if (text == "success"){
               formSuccess();
