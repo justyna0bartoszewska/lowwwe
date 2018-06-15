@@ -1,8 +1,22 @@
-﻿<?php
-$name = $_POST["name"];
-$email = $_POST["email"];
-$message = $_POST["message"];
- 
+<?php
+
+$inputName = $_POST['inputName'];
+$inputEmail = $_POST['inputEmail'];
+$inputDomena = $_POST["inputDomena"];
+$inputTematyka = $_POST["inputTematyka"];
+$rodzajStrony = $_POST["rodzajStrony"];
+$skladProjektu = $_POST["skladProjektu"];
+$TytulyZakladek = $_POST["TytulyZakladek"];
+$adresurl = $_POST["adresurl"];
+$teksty = $_POST["teksty"];
+$szablon = $_POST["szablon"];
+$srodowisko = $_POST["srodowisko"];
+$system = $_POST["system"];
+$Inspiracje = $_POST["Inspiracje"];
+$Budzet = $_POST["Budzet"];
+$DodatkowyOpis = $_POST["DodatkowyOpis"];
+$zalacznik = $_POST["zalacznik"];
+
 $EmailTo = "biuro@lowwwe.pl";
 $Subject = "Landing Page";
  
